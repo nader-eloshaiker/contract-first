@@ -1,0 +1,10 @@
+{
+  "ngVersion": 7,
+  "modelPropertyNaming": "snake_case",
+  "fileNaming": "camelCase",
+  "supportsES6": true,
+  "npmName": "@swagger/pet-store-sdk",
+  "npmRepository": "https://mycompany.jfrog.io/",
+  "npmVersion": "0.0.1",
+  "snapshot" : false
+}

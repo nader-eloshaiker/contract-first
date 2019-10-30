@@ -1,0 +1,23 @@
+<div fxLayout="column" fxLayoutGap="40px" fxLayoutAlign="center center">
+  <div fxLayout="row" fxLayoutGap="40px" fxLayoutAlign="center center">
+    <form [formGroup]="searchForm" (ngSubmit)="onSubmit()">
+      <mat-form-field>
+        <input placeholder="Pet ID" matInput id="petId" formControlName="petId">
+        <mat-error
+          *ngIf="fieldPetId.invalid && fieldPetId.errors.required">
+          This is a required field
+        </mat-error>
+      </mat-form-field>
+
+      <button mat-button type="submit">
+        <mat-icon>search</mat-icon>
+        Find
+      </button>
+    </form>
+
+  </div>
+
+  <div>
+    {{searchResult}}
+  </div>
+</div>
