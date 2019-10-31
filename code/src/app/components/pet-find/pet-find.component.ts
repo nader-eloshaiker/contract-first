@@ -2,6 +2,8 @@ import {Component, OnInit} from '@angular/core';
 import {FormBuilder, FormControl, FormGroup, Validators} from '@angular/forms';
 import {PetService} from '../../services/pet.service';
 import {Pet} from '../../models/pet';
+// import {PetService} from '../../../lib/api/generated/pet-store-angular-sdk';
+// import {Pet} from '../../../lib/api/generated/pet-store-angular-sdk';
 
 @Component({
   selector: 'app-pet-find',

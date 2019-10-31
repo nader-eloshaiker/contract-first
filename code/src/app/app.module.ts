@@ -10,6 +10,17 @@ import {PetFindComponent} from './components/pet-find/pet-find.component';
 import {SharedModule} from './shared/shared.module';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
+// import {ApiModule, Configuration, ConfigurationParameters} from '../lib/api/generated/pet-store-angular-sdk';
+//
+// export const apiParams: ConfigurationParameters = {
+//   basePath: 'https://petstore.swagger.io/v2'
+//   // set configuration parameters here.
+// };
+// export const apiConfig = new Configuration(apiParams);
+// export function getApiConfig() {
+//   return apiConfig;
+// }
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,6 +32,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
     BrowserAnimationsModule,
     BrowserModule,
     SharedModule,
+    // ApiModule.forRoot(getApiConfig),
   ],
   providers: [
     ApiService,
